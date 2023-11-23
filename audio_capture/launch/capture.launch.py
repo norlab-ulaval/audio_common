@@ -6,7 +6,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     _dst = LaunchConfiguration('dst')
-    _device = LaunchConfiguration('device')
+    _device = LaunchConfiguration('capture_device')
     _format = LaunchConfiguration('format')
     _bitrate = LaunchConfiguration('bitrate')
     _channels = LaunchConfiguration('channels')
@@ -21,7 +21,7 @@ def generate_launch_description():
         default_value='appsink'
     )
     _device_launch_arg = DeclareLaunchArgument(
-        'device',
+        'capture_device',
         default_value=''
     )
     _format_launch_arg = DeclareLaunchArgument(
