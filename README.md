@@ -7,6 +7,13 @@ This repository contains the ROS audio\_common package.
 
 For user documentation, please refer to the [ROS Wiki page for audio\_common](http://wiki.ros.org/audio_common)
 
+## Dependencies
+This package depends on GStreamer1.0. Install it with :
+```
+sudo apt install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-*
+```
+
+
 ## Deb Build Status
 
 | Package              | Melodic (Bionic)                                                                                                                                                                                     | Noetic (Focal)                                                                                                                                                                                     | Noetic (Buster)                                                                                                                                                                                      |
